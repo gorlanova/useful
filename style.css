@@ -1,0 +1,96 @@
+:root{
+  --smoke: whitesmoke;
+  --pink: rgb(255, 202, 219);
+  --blue: rgb(176, 222, 240);
+  --shadowblue: rgb(143, 198, 219);
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: var(--smoke);
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Sniglet', cursive;
+  font-weight: 400;
+  /* border: 1px solid var(--blue) */
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.center{
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* HEADER */
+header{
+  background-color: var(--pink);
+}
+
+header h1{
+  text-align: center;
+  font-family: 'Sniglet', cursive;
+  font-weight: 800;
+  font-size: 4em;
+  color: whitesmoke;
+  margin: 0.5em 0;
+}
+
+header nav{
+  flex-wrap: wrap;
+  background-color: var(--smoke);
+  border-bottom: 5px dotted var(--pink);
+  padding: 0.5em 3em;
+  position: sticky;
+}
+
+header nav a{
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0.2em 0.7em;
+  color: var(--blue);
+}
+
+header nav a:hover{
+  animation: glow 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {text-shadow: none}
+  to {text-shadow: 0 0 20px var(--shadowblue)}
+}
+
+/* MAIN CONTENT */
+
+section{
+  min-width: 375px;
+  width: 70%;
+  max-width: 900px;
+  padding: 1em 1em;
+}
+
+h3{
+  font-size: 1.5em;
+  color: var(--blue);
+}
+
+article{
+  width: 100%;
+  max-width: 800px;
+  border: 3px solid var(--pink);
+  border-radius: 15px;
+  margin: 0.5em 0;
+}
