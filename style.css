@@ -49,22 +49,24 @@ header h1{
   margin: 0.5em 0;
 }
 
-header nav{
+nav{
   flex-wrap: wrap;
   background-color: var(--smoke);
   border-bottom: 5px dotted var(--pink);
   padding: 0.5em 3em;
   position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
-header nav a{
+nav a{
   text-decoration: none;
   font-size: 1.5em;
   margin: 0.2em 0.7em;
   color: var(--blue);
 }
 
-header nav a:hover{
+nav a:hover{
   animation: glow 0.8s ease-in-out infinite alternate;
 }
 
