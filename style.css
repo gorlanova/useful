@@ -95,4 +95,14 @@ article{
   border: 3px solid var(--pink);
   border-radius: 15px;
   margin: 0.5em 0;
+  padding: 0.5em 1em;
+}
+
+article a{
+  text-decoration: none;
+  color: slategrey;
+}
+
+article a:hover{
+  color: gold;
 }
